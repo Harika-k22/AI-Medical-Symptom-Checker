@@ -1,14 +1,41 @@
-# AI-Medical-Symptom-Checker
-An end-to-end AI-powered medical symptom checker that predicts possible diseases based on user-reported symptoms using machine learning,
-NLP, explainable AI, and a RESTful API. The system is built using a public Kaggle dataset and follows real-world healthcare AI design principles.
+An end-to-end AI-powered medical diagnosis system that predicts diseases based on user-input symptoms using Machine Learning (Random Forest, XGBoost) and NLP (BERT). The system also integrates SQLite for persistent storage and provides analytics and visualization.
 
-Key Features:
-1)Symptom-to-Disease Prediction
-2) Top-3 disease predictions with confidence scores
-3) Natural Language Processing (NLP) for free-text symptom input
-4) Explainable AI (SHAP) to highlight important symptoms influencing predictions
-5) FastAPI REST API for real-time predictions
-6) SQLite database to store prediction history
-7) Emergency symptom detection
 
+Features:
+1)Predict diseases from symptoms
+2) Random Forest model (fast & reliable)
+3)XGBoost model (high accuracy)
+4) BERT model (NLP-based approach)
+5) SQLite database integration
+6) Confusion Matrix & model evaluation
+7) Analytics on stored predictions
+8) Multiple test cases for validation
+
+AI-Medical-Symptom-Checker/
+│
+├── dataset/
+│   └── Diseases_and_Symptoms_dataset.csv
+│
+├── notebook/
+│   └── AI_medical_symptom_checker.ipynb
+│
+├── database/
+│   └── medical_ai.db
+├── README.md
+
+
+How to Run : 
+1)Load the dataset
+2)Train models (RF, XGBoost, BERT)
+3)Run prediction system:
+4)run()-Enter symptoms: ever chills headache
+
+Input: fever chills sweating headache
+
+Output: Predictions
+1. Flu (72.5%)
+2. Malaria (18.2%)
+3. Dengue (9.3%)
+
+5)SQLite Integration:The system stores predictions in a local database:
 
